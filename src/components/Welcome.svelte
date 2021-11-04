@@ -1,10 +1,14 @@
 <script lang="ts">
     import { useNavigate, useLocation } from "svelte-navigator";
+    import { count } from "../utils/stores";
+
     const navigate = useNavigate();
     const location = useLocation();
 
     const onClick = () =>{
-        navigate('/intro', { replace: true });
+      count.update(n => n + 1);
+
+      navigate('/intro', { replace: true });
     }
 </script>
 
@@ -59,11 +63,6 @@
 .scale-up-center {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-}
-
-.scale-down-center {
-  -webkit-animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .text-pop-up-top {
