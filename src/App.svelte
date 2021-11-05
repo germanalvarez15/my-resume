@@ -6,9 +6,9 @@
 	import BackButton from "./components/utils/BackButton.svelte";
 	import FowardButton from "./components/utils/FowardButton.svelte";
 	import { count } from "./utils/stores";
-
 	import Experience from "./components/Experience.svelte";
-import Contact from "./components/Contact.svelte";
+	import Contact from "./components/Contact.svelte";
+	import { MetaTags } from 'svelte-meta-tags';
 
 	const routesMap = {
 		home: '/',
@@ -40,38 +40,92 @@ import Contact from "./components/Contact.svelte";
 		window.scrollTo(0,0);
 	}
 </script>
-<Router>
+	<MetaTags 
+		title="German Alvarez"
+		description="This is my personal website where you can know more about me."
+		openGraph={{
+			profile: {
+				firstName: 'German',
+				lastName: 'Alvarez',
+				username: 'germanalvarez15',
+				gender: 'male'
+			},
+			images: [
+			{
+				url: 'https://pbs.twimg.com/profile_images/1438725466286968838/S5rbbpos_400x400.jpg',
+				width: 850,
+				height: 650,
+				alt: 'Profile Photo'
+			}
+			]
+		}}
+		twitter={{
+			handle: '@alvarezgerman15',
+			site: '@alvarezgerman15',
+			cardType: 'summary_large_image'
+		}}
+		additionalMetaTags={[
+			{
+			  property: 'dc:creator',
+			  content: 'German Alvarez'
+			},
+			{
+			  name: 'my-resume',
+			  content: 'My-Resume'
+			},
+			{
+			  httpEquiv: 'x-ua-compatible',
+			  content: 'IE=edge; chrome=1'
+			}
+		  ]}
+		additionalLinkTags={[
+			{
+			  rel: 'icon',
+			  href: 'https://favicon-generator.org/favicon-generator/htdocs/favicons/2021-11-05/2d27ee9484f4335e01ff06e872dcafb0.ico'
+			},
+			{
+			  rel: 'apple-touch-icon',
+			  href: 'https://www.test.ie/touch-icon-ipad.jpg',
+			  sizes: '76x76'
+			},
+			{
+			  rel: 'manifest',
+			  href: '/manifest.json'
+			}
+		  ]}
+	/>
+	<Router>
 
-<div class="absolute-container">
-	{#if actualPageIndex > 1}
-		<BackButton actualPageIndex={actualPageIndex} routesMap={routesMap}/>
-	{/if}
+	<div class="absolute-container">
+		{#if actualPageIndex > 1}
+			<BackButton actualPageIndex={actualPageIndex} routesMap={routesMap}/>
+		{/if}
 
-		<Route path="{routesMap.home}">
-			<Welcome/>
-		</Route>
-		<Route path="{routesMap.intro}">
-			<Intro/>
-		</Route>
-		<Route path="{routesMap.stack}">
-			<Stack/>
-		</Route>
-		<Route path="{routesMap.experience}">
-			<Experience/>
-		</Route>
-		<Route path="{routesMap.contact}">
-			<Contact/>
-		</Route>
+			<Route path="{routesMap.home}">
+				<Welcome/>
+			</Route>
+			<Route path="{routesMap.intro}">
+				<Intro/>
+			</Route>
+			<Route path="{routesMap.stack}">
+				<Stack/>
+			</Route>
+			<Route path="{routesMap.experience}">
+				<Experience/>
+			</Route>
+			<Route path="{routesMap.contact}">
+				<Contact/>
+			</Route>
 
-	{#if actualPageIndex < (routesKeysArray.length - 1) && actualPageIndex > 0}
-		<FowardButton actualPageIndex={actualPageIndex} routesMap={routesMap}/>
-	{/if}
-	{#if scrollDown}
-		<div class="goTopButton" on:click="{onScrollTop}">
-			<img alt="Go top" src="assets/arrow.png">
-		</div>
-	{/if}
-</div>
+		{#if actualPageIndex < (routesKeysArray.length - 1) && actualPageIndex > 0}
+			<FowardButton actualPageIndex={actualPageIndex} routesMap={routesMap}/>
+		{/if}
+		{#if scrollDown}
+			<div class="goTopButton" on:click="{onScrollTop}">
+				<img alt="Go top" src="assets/arrow.png">
+			</div>
+		{/if}
+	</div>
 </Router>
 
 <style>
