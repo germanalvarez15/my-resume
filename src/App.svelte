@@ -8,12 +8,14 @@
 	import { count } from "./utils/stores";
 
 	import Experience from "./components/Experience.svelte";
+import Contact from "./components/Contact.svelte";
 
 	const routesMap = {
 		home: '/',
 		intro: '/intro',
 		stack: '/stack',
-		experience: '/experience'
+		experience: '/experience',
+		contact: '/contact'
 	}
 	const routesKeysArray = Object.keys(routesMap);
 	
@@ -56,6 +58,9 @@
 		</Route>
 		<Route path="{routesMap.experience}">
 			<Experience/>
+		</Route>
+		<Route path="{routesMap.contact}">
+			<Contact/>
 		</Route>
 
 	{#if actualPageIndex < (routesKeysArray.length - 1) && actualPageIndex > 0}

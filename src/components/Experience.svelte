@@ -100,7 +100,9 @@
 .column > * {
   margin-top: 5%;
 }
-
+.column > img {
+  width: 60%;
+}
 .model-container {
   width: 25vw;
   height: 60vh;
