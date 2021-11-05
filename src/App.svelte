@@ -44,6 +44,7 @@
 		title="German Alvarez"
 		description="This is my personal website where you can know more about me."
 		openGraph={{
+			site_name: 'German Alvarez',
 			profile: {
 				firstName: 'German',
 				lastName: 'Alvarez',

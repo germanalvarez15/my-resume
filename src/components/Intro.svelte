@@ -7,8 +7,8 @@
     <div class="profile-container" >
         <img alt='German Alvarez' src="assets/profile-pic.png" />
         <br />
-        <div>Nationalities: 🇺🇾 🇮🇹</div>
-        <div >Languages: 🇪🇸 🇬🇧 🇮🇹</div>
+        <div>Nationalities: <img  alt="Uruguay" class="flag" src="assets/flags/uy.svg"> <img class="flag" alt="Uruguay" src="assets/flags/it.svg"></div>
+        <div >Languages: <img  alt="Uruguay" class="flag" src="assets/flags/es.svg"> <img class="flag" alt="Uruguay" src="assets/flags/gb.svg"> <img class="flag" alt="Uruguay" src="assets/flags/it.svg"></div>
         <br/>
     </div>
     <div class="description-container" >
@@ -45,6 +45,10 @@
     </div>
 </div>
 <style>
+  .flag{
+    width: 20px;
+    margin: 0;
+  }
   h2{
     text-align: center;
   }
