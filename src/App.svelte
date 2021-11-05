@@ -6,7 +6,8 @@
 	import BackButton from "./components/utils/BackButton.svelte";
 	import FowardButton from "./components/utils/FowardButton.svelte";
 	import { count } from "./utils/stores";
-import Experience from "./components/Experience.svelte";
+
+	import Experience from "./components/Experience.svelte";
 
 	const routesMap = {
 		home: '/',
@@ -15,6 +16,7 @@ import Experience from "./components/Experience.svelte";
 		experience: '/experience'
 	}
 	const routesKeysArray = Object.keys(routesMap);
+	
 	let actualPageIndex;
 
 	count.subscribe(value => {
@@ -28,6 +30,13 @@ import Experience from "./components/Experience.svelte";
 		}
 	})
 
+	let scrollDown = false;
+	window.onscroll = (e)=>{
+		scrollDown = window.scrollY > 0;
+	}
+	const onScrollTop = ()=>{
+		window.scrollTo(0,0);
+	}
 </script>
 <Router>
 
@@ -51,6 +60,11 @@ import Experience from "./components/Experience.svelte";
 
 	{#if actualPageIndex < (routesKeysArray.length - 1) && actualPageIndex > 0}
 		<FowardButton actualPageIndex={actualPageIndex} routesMap={routesMap}/>
+	{/if}
+	{#if scrollDown}
+		<div class="goTopButton" on:click="{onScrollTop}">
+			<img alt="Go top" src="assets/arrow.png">
+		</div>
 	{/if}
 </div>
 </Router>
@@ -108,5 +122,44 @@ import Experience from "./components/Experience.svelte";
             justify-content: center;
     		margin-top: 0;
 		}
-	}
+
+		:global(.left-arrow),
+		:global(.right-arrow) {
+			width: 25vw;
+		}
+		:global(.left-arrow) {
+			-webkit-box-ordinal-group: 2;
+			-ms-flex-order: 1;
+			order: 1;
+		}
+		:global(.right-arrow) {
+			-webkit-box-ordinal-group: 3;
+			-ms-flex-order: 2;
+			order: 2;
+		}
+		:global(.main-container){
+			-webkit-box-ordinal-group: 4;
+			-ms-flex-order: 3;
+			order: 3;
+		}
+		:global(.model-container) {
+			width: 80vw !important;
+		}
+		.goTopButton{
+			width: 10vw;
+			height: 5vh;
+			position: fixed;
+			left: 80vw;
+			bottom: 10vh;
+			background-color: #005575;
+			border-radius: 20px;
+		}
+		.goTopButton > img{
+			-webkit-filter: invert(1) opacity(0.5);
+          	filter: invert(1) opacity(0.5);
+			transform: rotate(90deg);
+			width:100%;
+			height: auto;
+		}
+	}	
 </style>

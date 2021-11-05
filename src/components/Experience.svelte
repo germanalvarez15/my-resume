@@ -122,5 +122,22 @@ model-viewer {
   height: 100%;
   width: 100%;
 }
+
+@media only screen and (max-width: 650px) {
+  .column-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+  }
+  .column {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 850px) {
+}
+@media only screen and (min-width: 850px) and (max-width: 1000px) {
+}
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+}
 /*# sourceMappingURL=experience.css.map */
   </style>

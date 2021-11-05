@@ -1,12 +1,21 @@
 <script>
     import { useNavigate } from "svelte-navigator";
     import { count } from '../../utils/stores';
+	import { checkKey, keyPressed } from "../../utils/keyevent";
 
     const navigate = useNavigate();
     export let actualPageIndex;
     export let routesMap;
     const routesKeysArray = Object.keys(routesMap);
 
+    document.addEventListener("keydown",
+		() =>{
+			checkKey();
+            if(keyPressed == 'left'){
+                onPreviousPage();
+            }
+		}
+	)
     const onPreviousPage = () => {
 
         actualPageIndex -= 1; 
@@ -22,10 +31,4 @@
         img{
         width: 100%;
     }
-	.left-arrow{
-        -webkit-filter: invert(1) opacity(0.5);
-		filter: invert(1) opacity(0.5);
-        width: 5vw;
-    }
-
 </style>
