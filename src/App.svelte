@@ -43,8 +43,12 @@
 	<MetaTags 
 		title="German Alvarez"
 		description="This is my personal website where you can know more about me."
+		
 		openGraph={{
+			title: 'German Alvarez',
+    		description: 'This is my personal website where you can know more about me',
 			site_name: 'German Alvarez',
+			type: 'profile',
 			profile: {
 				firstName: 'German',
 				lastName: 'Alvarez',
@@ -52,14 +56,30 @@
 				gender: 'male'
 			},
 			images: [
-			{
-				url: 'https://pbs.twimg.com/profile_images/1438725466286968838/S5rbbpos_400x400.jpg',
-				width: 850,
-				height: 650,
-				alt: 'Profile Photo'
-			}
+				{
+					url: 'https://pbs.twimg.com/profile_images/1438725466286968838/S5rbbpos_400x400.jpg',
+					width: 400,
+					height: 400,
+					alt: 'Profile Photo'
+				},
+				{
+					url: 'https://lh3.googleusercontent.com/fife/AAWUweWkFFP8z0tM5ingjyPCJ2NdhF3p5AwePcWTVSrMtjqiM_b8u878W8fzR39RSkJbX_lIBuk8_a47tau3U347V1SnYVWD5J1Y4IGCSRl17vh3Hn8s5u7LffT3c-ZRzrw250XLaaZ8TVckyWMCZ7-QrTaeDiuOQLED6d3AvBUBBkusa0_mGwl_URwEs9F0qG4AcfQtyqN-Sy1WEJfm5cZw0Ths4V1fz8ZP8WkoWh8NZUvhozu_4pOI17nR5sn0c5d6amrsUsn_ollJWLpsUc4ntlI6xl77fJHn0RMfrimKNyNXvQG3K7po-kVSTbh5ulydbObPyvos0oviUTfhekoUXR1HOscz9b6DPRGk45g3riLNkUunxiCa601KMQP8e5ri5r3jGO68WesjpypTNOg1HejzO64IZs0VovsN1QmuglCxaoIedkX98fCCWz8Ulj9tfyp5N8Q9GAX1ZBOrITBXJxmhnHIsqCFO_kaX1-8n2WEiOnXjx7JEXPiMTFf1wN_phAsx8yL10vI-PnpOaoeOQNNXvJIL9WjNZ0gUJppegHvgDNsLRuJaGvqIyt5K4gmPKjtGnmS-C3Q87ECqWDQQbmkRIyy_MpT0PIlPwX2qUBsyFnVSOcVUifdlgSzkxegNocchhPnIKiU9WUjcHb0mrHvhWA27hRkDYmpRJiUmFOASy4QycMvwjQ34H-Q-bT4rWFNHyQBel2oz8amhLktMODA_JzQr2e25mg=w1860-h1028-ft',
+					width: 850,
+					height: 650,
+					alt: 'Profile Photo'
+				}
 			]
 		}}
+		  robotsProps={{
+			noarchive: true,
+			nosnippet: true,
+			maxSnippet: -1,
+			maxImagePreview: 'none',
+			maxVideoPreview: -1,
+			notranslate: true,
+			noimageindex: true,
+			unavailableAfter: '25 Jun 2010 15:00:00 PST'
+		  }}
 		twitter={{
 			handle: '@alvarezgerman15',
 			site: '@alvarezgerman15',
