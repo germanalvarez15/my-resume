@@ -232,7 +232,8 @@
 			left: 80vw;
 			bottom: 10vh;
 			background-color: #005575;
-			border-radius: 20px;
+			border-radius: 25px;
+    		border: solid 1px white;
 		}
 		.goTopButton > img{
 			-webkit-filter: invert(1) opacity(0.5);
