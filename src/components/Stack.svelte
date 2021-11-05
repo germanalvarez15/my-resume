@@ -156,7 +156,7 @@
           <img 
           alt="Flutter"
 
-          src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_flutter_icon_130599.png"/>
+          src="/assets/stacks/flutter.png"/>
           <div class="rate">
             <label for="star5" title="text">5 stars</label>
             <label for="star4" title="text" class="">4 stars</label>

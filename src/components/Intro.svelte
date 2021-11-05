@@ -13,6 +13,7 @@
     </div>
     <div class="description-container" >
         <h2 >German Alvarez</h2>
+        <h5>Frontend Developer / AR & VR Developer</h5>
         <p >
         I started with my academic training as a Front-End Programmer at the
         BIOS institute and later, there too, I graduated from the career of
@@ -50,7 +51,14 @@
     margin: 0;
   }
   h2{
+    margin-bottom: 0;
+  }
+  h2, h5{
     text-align: center;
+  }
+  h5{
+    margin-top: 0;
+    color: gray;
   }
   img {
     width: 100%;
