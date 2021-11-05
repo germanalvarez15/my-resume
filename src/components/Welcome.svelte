@@ -21,6 +21,8 @@
 
 
 .main-container-welcome {
+    position: absolute;
+    top: 0;
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -28,7 +30,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
     align-items: center;
 }
 
@@ -148,11 +149,14 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .intro-button {
     width: 60vw;
     height: 10vh;
     font-size: 30px;
+  }
+  .main-container-welcome{
+    top: 40px;
   }
 }
 
