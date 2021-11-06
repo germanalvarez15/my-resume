@@ -6,7 +6,7 @@
 <div  class="main-container" in:fade={{ delay: 250, duration: 500}}>
     <h2 >My skills</h2>
     <div class="column-container">
-      <div class="column-1">
+      <div class="column">
         <div class="skill">
           <img alt="Angular" src="/assets/stacks/angular.png" />
           <div class="rate">
@@ -70,7 +70,7 @@
           </div>
         </div>
       </div>
-      <div class="column-2">
+      <div class="column">
         <div class="skill">
           <img
           alt="Unity"
@@ -139,7 +139,7 @@
           </div>
         </div>
       </div>
-      <div class="column-3">
+      <div class="column">
         <div class="skill">
           <img 
           alt="Firebase"
@@ -198,6 +198,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          width: 85vw !important;
+
 }
 
 .column-container {
@@ -257,7 +259,7 @@ img {
 }
 
 .model-container {
-  width: 30vw;
+  width: 25vw;
   height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -303,9 +305,12 @@ model-viewer {
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  
   .main-container {
     left: 20vw;
   }
+  
 }
+
 /*# sourceMappingURL=stack.css.map */
 </style>

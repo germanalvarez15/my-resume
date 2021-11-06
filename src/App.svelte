@@ -48,13 +48,7 @@
 			title: 'German Alvarez',
     		description: 'This is my personal website where you can know more about me',
 			site_name: 'German Alvarez',
-			type: 'profile',
-			profile: {
-				firstName: 'German',
-				lastName: 'Alvarez',
-				username: 'germanalvarez15',
-				gender: 'male'
-			},
+			type: 'website',
 			images: [
 				{
 					url: 'https://pbs.twimg.com/profile_images/1438725466286968838/S5rbbpos_400x400.jpg',
@@ -229,7 +223,7 @@
 			width: 10vw;
 			height: 5vh;
 			position: fixed;
-			left: 80vw;
+			left: 10vw;
 			bottom: 10vh;
 			background-color: #005575;
 			border-radius: 25px;
@@ -240,7 +234,7 @@
           	filter: invert(1) opacity(0.5);
 			transform: rotate(90deg);
 			width:100%;
-			height: auto;
+			height: 100%;
 		}
 	}	
 </style>
