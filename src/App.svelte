@@ -51,10 +51,6 @@
 			  rel: 'apple-touch-icon',
 			  href: 'https://www.test.ie/touch-icon-ipad.jpg',
 			  sizes: '76x76'
-			},
-			{
-			  rel: 'manifest',
-			  href: '/manifest.json'
 			}
 		  ]}
 	/>
