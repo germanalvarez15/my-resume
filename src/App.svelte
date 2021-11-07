@@ -56,28 +56,6 @@
 	/>
 		
 <svelte:head>
-				
-			<!-- Primary Meta Tags -->
-	<title>German Alvarez </title>
-	<meta name="title" content="German Alvarez ">
-	<meta name="description" content="Frontend Developer / AR & VR Developer">
-	<!-- Google / Search Engine Tags -->
-	<meta itemprop="name" content="German Alvarez">
-	<meta itemprop="description" content="Frontend Developer / AR & VR Developer">
-	<meta itemprop="image" content="https://lh3.googleusercontent.com/fife/AAWUweWkFFP8z0tM5ingjyPCJ2NdhF3p5AwePcWTVSrMtjqiM_b8u878W8fzR39RSkJbX_lIBuk8_a47tau3U347V1SnYVWD5J1Y4IGCSRl17vh3Hn8s5u7LffT3c-ZRzrw250XLaaZ8TVckyWMCZ7-QrTaeDiuOQLED6d3AvBUBBkusa0_mGwl_URwEs9F0qG4AcfQtyqN-Sy1WEJfm5cZw0Ths4V1fz8ZP8WkoWh8NZUvhozu_4pOI17nR5sn0c5d6amrsUsn_ollJWLpsUc4ntlI6xl77fJHn0RMfrimKNyNXvQG3K7po-kVSTbh5ulydbObPyvos0oviUTfhekoUXR1HOscz9b6DPRGk45g3riLNkUunxiCa601KMQP8e5ri5r3jGO68WesjpypTNOg1HejzO64IZs0VovsN1QmuglCxaoIedkX98fCCWz8Ulj9tfyp5N8Q9GAX1ZBOrITBXJxmhnHIsqCFO_kaX1-8n2WEiOnXjx7JEXPiMTFf1wN_phAsx8yL10vI-PnpOaoeOQNNXvJIL9WjNZ0gUJppegHvgDNsLRuJaGvqIyt5K4gmPKjtGnmS-C3Q87ECqWDQQbmkRIyy_MpT0PIlPwX2qUBsyFnVSOcVUifdlgSzkxegNocchhPnIKiU9WUjcHb0mrHvhWA27hRkDYmpRJiUmFOASy4QycMvwjQ34H-Q-bT4rWFNHyQBel2oz8amhLktMODA_JzQr2e25mg=w1860-h1028-ft">
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://germanalvarez.vercel.app/">
-	<meta property="og:title" content="German Alvarez">
-	<meta property="og:description" content="Frontend Developer / AR & VR Developer">
-	<meta property="og:image" content="https://lh3.googleusercontent.com/fife/AAWUweWkFFP8z0tM5ingjyPCJ2NdhF3p5AwePcWTVSrMtjqiM_b8u878W8fzR39RSkJbX_lIBuk8_a47tau3U347V1SnYVWD5J1Y4IGCSRl17vh3Hn8s5u7LffT3c-ZRzrw250XLaaZ8TVckyWMCZ7-QrTaeDiuOQLED6d3AvBUBBkusa0_mGwl_URwEs9F0qG4AcfQtyqN-Sy1WEJfm5cZw0Ths4V1fz8ZP8WkoWh8NZUvhozu_4pOI17nR5sn0c5d6amrsUsn_ollJWLpsUc4ntlI6xl77fJHn0RMfrimKNyNXvQG3K7po-kVSTbh5ulydbObPyvos0oviUTfhekoUXR1HOscz9b6DPRGk45g3riLNkUunxiCa601KMQP8e5ri5r3jGO68WesjpypTNOg1HejzO64IZs0VovsN1QmuglCxaoIedkX98fCCWz8Ulj9tfyp5N8Q9GAX1ZBOrITBXJxmhnHIsqCFO_kaX1-8n2WEiOnXjx7JEXPiMTFf1wN_phAsx8yL10vI-PnpOaoeOQNNXvJIL9WjNZ0gUJppegHvgDNsLRuJaGvqIyt5K4gmPKjtGnmS-C3Q87ECqWDQQbmkRIyy_MpT0PIlPwX2qUBsyFnVSOcVUifdlgSzkxegNocchhPnIKiU9WUjcHb0mrHvhWA27hRkDYmpRJiUmFOASy4QycMvwjQ34H-Q-bT4rWFNHyQBel2oz8amhLktMODA_JzQr2e25mg=w1860-h1028-ft">
-
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://germanalvarez.vercel.app/">
-	<meta property="twitter:title" content="German Alvarez">
-	<meta property="twitter:description" content="Frontend Developer / AR & VR Developer">
-	<meta property="twitter:image" content="https://lh3.googleusercontent.com/fife/AAWUweWkFFP8z0tM5ingjyPCJ2NdhF3p5AwePcWTVSrMtjqiM_b8u878W8fzR39RSkJbX_lIBuk8_a47tau3U347V1SnYVWD5J1Y4IGCSRl17vh3Hn8s5u7LffT3c-ZRzrw250XLaaZ8TVckyWMCZ7-QrTaeDiuOQLED6d3AvBUBBkusa0_mGwl_URwEs9F0qG4AcfQtyqN-Sy1WEJfm5cZw0Ths4V1fz8ZP8WkoWh8NZUvhozu_4pOI17nR5sn0c5d6amrsUsn_ollJWLpsUc4ntlI6xl77fJHn0RMfrimKNyNXvQG3K7po-kVSTbh5ulydbObPyvos0oviUTfhekoUXR1HOscz9b6DPRGk45g3riLNkUunxiCa601KMQP8e5ri5r3jGO68WesjpypTNOg1HejzO64IZs0VovsN1QmuglCxaoIedkX98fCCWz8Ulj9tfyp5N8Q9GAX1ZBOrITBXJxmhnHIsqCFO_kaX1-8n2WEiOnXjx7JEXPiMTFf1wN_phAsx8yL10vI-PnpOaoeOQNNXvJIL9WjNZ0gUJppegHvgDNsLRuJaGvqIyt5K4gmPKjtGnmS-C3Q87ECqWDQQbmkRIyy_MpT0PIlPwX2qUBsyFnVSOcVUifdlgSzkxegNocchhPnIKiU9WUjcHb0mrHvhWA27hRkDYmpRJiUmFOASy4QycMvwjQ34H-Q-bT4rWFNHyQBel2oz8amhLktMODA_JzQr2e25mg=w1860-h1028-ft">
 
 </svelte:head>
 	
