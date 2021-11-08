@@ -15,7 +15,7 @@
       </div>
       <div class="column">
         <img alt="Solcre" src="assets/experience/solcre.png" />
-        <b>Front-End Developer</b>
+        <b>Frontend Developer</b>
         <div style="color: gray">(June 2019 - January 2021)</div>
         <div style="color: rgb(24, 24, 24); text-align: center; width: 75%">
           Front End Development using technologies such as Angular2, RxJs,
@@ -24,10 +24,10 @@
       </div>
       <div class="column">
         <img alt="Altimetrik" src="assets/experience/altimetrik.png" />
-        <b>AR & VR Developer</b>
-        <div style="color: gray">(July 2018 - June 2019)</div>
+        <b>Frontend Developer</b>
+        <div style="color: gray">(January 2021 - present)</div>
         <div style="color: rgb(24, 24, 24); text-align: center; width: 65%">
-          AR & VR Development using Unity as engine.
+          Front End Development using technologies such as Angular2, RxJs, Javascript, SASS and others..
         </div>
       </div>
       <div class="model-container">
